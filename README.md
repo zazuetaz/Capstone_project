@@ -55,3 +55,4 @@ for i in stat_info.index:
     x+=1
 m
 ```
+![](Capstone%20Map.PNG)
