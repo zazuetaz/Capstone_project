@@ -3,6 +3,28 @@
 ## Abstract
 New York City residents utilize a number of modes of transportation to get from place to place and need to know they can rely on their preferred mode when they need it. One popular method is the shared bike system operated by Citibike. Citibike has stations in Manhattan, Queens, Brooklyn, and Jersey City. While Citibike does offer information in their application about the real-time availability of their bikes at a given station, there is no application that would allow a biker to know ahead of time whether they can rely on a bike being available at their station of choice (that I know of). I will aim to solve that problem by constructing a dash application a Citibike user could utilize to plan a trip using a bike from their station of choice.
 
+## Libraries
+Here are some of the main libraries and packages I used:
+```
+import pandas as pd 
+import requests #For API calls
+import datetime #For feature formatting
+import matplotlib.pyplot as plt #Viz
+%matplotlib inline
+import seaborn as sns #Viz
+import time #for the API call I don't use
+import os #For the weather call
+import json #file formatting
+from pandas.io.json import json_normalize #file formatting
+from sklearn.utils import resample
+
+from wwo_hist import retrieve_hist_data #historical weather 
+from mapbox import Geocoder
+
+import folium
+from folium.plugins import MarkerCluster
+```
+
 ## Data
 The data for this project will come from Citibike System Data. Ideally I would be able to run an API call on their station information, collecting minute by minute availability of bike traffic over the course of the day for a number of weeks. However, at the time I was collecting information for this project, NYC was under a shelter-in-place order to help stop the spread of the novel coronavirus, COVID-19. Given the halt on normal city traffic, I needed a different approach.
 
