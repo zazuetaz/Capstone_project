@@ -50,7 +50,7 @@ After gathering and cleaning the data, I fit and tuned various Machine Learning 
 
 The output is code for a web based application deployed in dash.
 
-
+![](capstone_gif.gif)
 
 ## Takeaways
 The model that went into the dash app was a Random Forest Classification model. It had an overall training accuracy of 86.68%. The accuarcy for the 'Low' station status class was 92% - this is important to note because I believe this class to be most sensitive for clients.
