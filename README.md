@@ -3,6 +3,11 @@
 ## Abstract
 New York City residents utilize a number of modes of transportation to get from place to place and need to know they can rely on their preferred mode when they need it. One popular method is the shared bike system operated by Citibike. Citibike has stations in Manhattan, Queens, Brooklyn, and Jersey City. While Citibike does offer information in their application about the real-time availability of their bikes at a given station, there is no application that would allow a biker to know ahead of time whether they can rely on a bike being available at their station of choice (that I know of). I will aim to solve that problem by constructing a dash application a Citibike user could utilize to plan a trip using a bike from their station of choice.
 
+## Contents
+The process for gathering and cleaning the data and modeling it can be found in the Cap 1-3 notebooks.
+
+The code for the dash app can be found in the app4.py file. I used PyCharm to run that. You will need to run the code in Cap2-Trees to have the random forest model that is used in the dash application.
+
 ## Libraries
 Here are some of the main libraries and packages I used:
 ```
@@ -69,8 +74,6 @@ I use MapBox for geospatial data to identify NYC neighborhoods
 
 ## Process
 After gathering and cleaning the data, I fit and tuned various Machine Learning classification models to predict, given a number of inputs, a classification problem of whether the number of bikes at the station at a given time will be low, medium, or high.
-
-The process for gathering and cleaning the data and modeling it can be found in the Cap 1-3 notebooks.
 
 The output is code for a web based application deployed in dash.
 
