@@ -70,6 +70,8 @@ I use MapBox for geospatial data to identify NYC neighborhoods
 ## Process
 After gathering and cleaning the data, I fit and tuned various Machine Learning classification models to predict, given a number of inputs, a classification problem of whether the number of bikes at the station at a given time will be low, medium, or high.
 
+The process for gathering and cleaning the data and modeling it can be found in the Cap 1-3 notebooks.
+
 The output is code for a web based application deployed in dash.
 
 ![](capstone_gif.gif)
